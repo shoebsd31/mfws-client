@@ -1,5 +1,8 @@
+
 import axios from 'axios';
 import dotenv from 'dotenv';
+import { Authentication } from '.';
+
 
 declare var process : {
   env: {
@@ -15,9 +18,9 @@ export class TempPost{
   constructor() {
     dotenv.config();
     this.url = process.env.URL;
+
   }
-  public async testPost() {
-    
+  public async testPost() {   
     
             const body = {
                 title: 'foo',
@@ -25,7 +28,7 @@ export class TempPost{
                 userId: 1,
               };
             const response = await axios.post(`${this.url}/posts`, body);
-            console.log(response.data);
+            console.log(<Authentication>response.data);
             return response.data;
             // return 'foo';
     }
