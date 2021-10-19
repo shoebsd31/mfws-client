@@ -26,6 +26,8 @@ export class TempPost{
               };
             const response = await axios.post(`${this.url}/posts`, body);
             console.log(response.data);
+            return response.data;
+            // return 'foo';
     }
 }
 
