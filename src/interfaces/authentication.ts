@@ -1,3 +1,7 @@
 export interface Authentication{
-    Value:string;
+    Username:string;
+    Password:string;
+    SessionID:string
+    Expiration:Date;
+    VaultGuid:string;
 }

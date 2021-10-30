@@ -9,7 +9,7 @@ declare var process : {
     URL: string
   }
 }
-export class TempPost{
+export class MFWSClient{
   /**
    *
    */
@@ -20,14 +20,14 @@ export class TempPost{
     this.url = process.env.URL;
 
   }
-  public async testPost() {   
+  public async AuthenticateUsingCredentials(authentication:Authentication) {   
     
-            const body = {
-                title: 'foo',
-                body: 'bar',
-                userId: 1,
-              };
-            const response = await axios.post(`${this.url}/posts`, body);
+    	// Sanity.
+			if (null == authentication)
+      return;
+
+     
+            const response = await axios.post(`${this.url}/REST/server/authenticationtokens`, authentication);
             console.log(<Authentication>response.data);
             return response.data;
             // return 'foo';
