@@ -1,9 +1,7 @@
 
 import axios from 'axios';
 import dotenv from 'dotenv';
-import { Authentication } from '.';
-import { PluginInfoConfiguration } from './interfaces/plugin-information-configuration';
-import { Vault } from './interfaces/vault';
+import { Authentication,PluginInfoConfiguration,Vault } from './interfaces';
 
 
 declare var process : {

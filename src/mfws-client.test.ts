@@ -1,8 +1,6 @@
-import { Authentication } from './interfaces/authentication';
+import { Authentication,Vault,PluginInfoConfiguration } from './interfaces';
 import {MFWSClient} from './mfws-client'
 import axios, { AxiosResponse } from "axios";
-import { Vault } from './interfaces/vault';
-import { PluginInfoConfiguration } from './interfaces/plugin-information-configuration';
 
 jest.mock("axios");
 const mockedAxios = axios as jest.Mocked<typeof axios>;

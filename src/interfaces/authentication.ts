@@ -1,4 +1,4 @@
-export interface Authentication{
+interface Authentication{
     Username:string;
     Password:string;
     SessionID:string

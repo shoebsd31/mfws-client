@@ -1,4 +1,4 @@
-export interface Vault{
+interface Vault{
     
     Name : string;
     GUID: string;

@@ -1,8 +1,8 @@
-export interface KeyValuePair {
+interface KeyValuePair {
     [key: string]: string;
  }
 
-export interface PluginInfoConfiguration{
+interface PluginInfoConfiguration{
     Name:string;
     IsDefault:boolean;
     AssemblyName:string;
