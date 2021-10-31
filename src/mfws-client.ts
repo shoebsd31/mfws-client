@@ -1,7 +1,8 @@
 
 import axios from 'axios';
-import dotenv from 'dotenv';
+
 import { Authentication,PluginInfoConfiguration,Vault } from './interfaces';
+import { MFWSClientBase } from './mfws-client-base';
 
 
 declare var process : {
@@ -9,15 +10,14 @@ declare var process : {
     URL: string
   }
 }
-export class MFWSClient{
+export class MFWSClient extends MFWSClientBase{
   /**
    *
    */
 
-  url:string;
   constructor() {
-    dotenv.config();
-    this.url = process.env.URL;
+    super();
+ 
   }
 
   public async AuthenticateUsingCredentials(authentication:Authentication) {
