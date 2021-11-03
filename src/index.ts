@@ -1,3 +1,4 @@
-import {MFWSClient} from './mfws-client'
+import { MFWSClient } from './mfws-client'
 import * as Interfaces from './interfaces/index'
-export {MFWSClient,Interfaces}
+import * as Vault from './types/index'
+export { MFWSClient, Interfaces ,Vault}

@@ -1,6 +1,6 @@
-import { ObjID } from "./obj-id";
 
-export class ObjVer extends ObjID{
+
+ class ObjVer extends ObjID{
     Version!:number;
     ExternalRepositoryObjectVersionID!:string;
     VersionType!:MFObjVerVersionType;

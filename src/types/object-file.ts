@@ -1,4 +1,4 @@
-import { FileVer } from "./file-ver";
+import { FileVer } from ".";
 
 export class ObjectFile extends FileVer
 {
@@ -10,3 +10,4 @@ export class ObjectFile extends FileVer
     FileGUID!:string;
 
 }
+

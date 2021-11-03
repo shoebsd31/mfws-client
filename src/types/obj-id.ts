@@ -1,4 +1,4 @@
-export class ObjID{
+class ObjID{
     ID!:number;
     Type!:number;
     ExternalRepositoryName!:string;

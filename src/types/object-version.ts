@@ -1,4 +1,3 @@
-import { ObjVer } from "./obj-ver";
 import { ObjectFile } from "./object-file";
 
 export class ObjectVersion{
@@ -22,7 +21,7 @@ export class ObjectVersion{
     ObjectCheckedOut!:boolean;
     ObjectCheckedOutToThisUser!:boolean;
     ObjectVersionFlags!:MFObjectVersionFlag;
-    ObjVer!:ObjVer;
+    ObjVer!: ObjVer;
     SingleFile!:boolean;
     ThisVersionLatestToThisUser!:boolean;
     Title!:string;   

@@ -1,4 +1,4 @@
-export class FileVer{
+class FileVer{
     ID!:number;
     Version!:number;
     ExternalRepositoryFileID!:string;
